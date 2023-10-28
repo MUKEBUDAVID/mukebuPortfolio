@@ -1,0 +1,43 @@
+
+
+@import "./variable";
+@import "./App";
+@media screen and  (min-width:map-get($breakpoint, Desktop)) {
+  body {
+    margin: 0px;
+    width: 100vw;
+    height:100vh;
+    
+    /* overflow-x: hidden; */
+  }
+}
+
+@media screen and  (min-width:map-get($breakpoint, Tablet) ) and (max-width:1024px) {
+
+  body {
+    margin: 0px;
+    width: 100vw;
+    // height: 120vh;
+    height: max-content;
+    
+    /* overflow-x: hidden; */
+  }
+    
+}
+
+
+
+@media screen and  (max-width:map-get($breakpoint, Mobile)) {
+  body {
+    margin: 0px;
+    width: 100vw;
+    // height: 120vh;
+    height: max-content;
+  
+    //  overflow-x: hidden; 
+  }
+}
+
+
+
+
