@@ -4,12 +4,36 @@
 @import "./App";
 @media screen and  (min-width:map-get($breakpoint, Desktop)) {
   body {
-    margin: 0px;
     width: 100vw;
     height:100vh;
-    
+    line-height: 1;
+    background: #000;
+
     /* overflow-x: hidden; */
   }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  /* HTML5 display-role reset for older browsers */
+ ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
 }
 
 @media screen and  (min-width:map-get($breakpoint, Tablet) ) and (max-width:1024px) {
@@ -19,6 +43,7 @@
     width: 100vw;
     // height: 120vh;
     height: max-content;
+
     
     /* overflow-x: hidden; */
   }
