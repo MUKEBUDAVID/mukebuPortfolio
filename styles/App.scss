@@ -1,159 +1,207 @@
-
 @import "./variable";
 /************ Custom Font ************/
 @font-face {
-	font-family: Centra;
-	src: url('../font/CentraNo2-Bold.ttf');
-	font-weight: 700;
+  font-family: Centra;
+  src: url("../font/CentraNo2-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
-	font-family: Centra;
-	src: url('../font/CentraNo2-Medium.ttf');
-	font-weight: 500;
+  font-family: Centra;
+  src: url("../font/CentraNo2-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
-	font-family: Centra;
-	src: url('../font/CentraNo2-Book.ttf');
-	font-weight: 400;
+  font-family: Centra;
+  src: url("../font/CentraNo2-Book.ttf");
+  font-weight: 400;
 }
 
-
-@media screen and  (min-width:map-get($breakpoint, Desktop)) {
-
-  header{
-  width: 100%;
-  height: 80px;
-  border: 1px red solid;
-  // padding: 18px 0 ;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  position: fixed;
-
-
-
-  .logo{
-    margin-left: 40px;
-    font-family: centra,serif;
-    font-size: 20px;
-    color: white;
-  }
-  .right{
-    width: 60%;
-    height: 50px;
-    // background-color: rgb(255, 0, 115);
-    margin-right: 40px;
+@media screen and (min-width: map-get($breakpoint, Desktop)) {
+  header {
+    width: 100%;
+    height: 80px;
+    border: 1px red solid;
+    // padding: 18px 0 ;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-  }
-  
-  nav{
-    width: 40%;
-    height: 100%;
-    // background-color: aqua;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-  nav a{
-    font-family: centra,serif;
-    text-decoration: none;
-    color: #fff;
-    font-weight:400;
-    letter-spacing: 0.8px;
-    font-size: 18px;
-  }
-  .reseaux{
-    width: 200px;
-    height: 100%;
-    // background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .reseaux a{
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: 3px gray solid;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-  button{
-    width: 20%;
-    height: 50px;
-    border:3px white solid ;
+    justify-content: space-between;
     background-color: transparent;
-    color: white;
+    position: fixed;
+
+    .logo {
+      margin-left: 40px;
+      font-family: centra, serif;
+      font-size: 20px;
+      color: white;
+    }
+    .right {
+      width: 60%;
+      height: 50px;
+      // background-color: rgb(255, 0, 115);
+      margin-right: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    nav {
+      width: 40%;
+      height: 100%;
+      // background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    nav a {
+      font-family: centra, serif;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+      font-size: 18px;
+    }
+    .reseaux {
+      width: 200px;
+      height: 100%;
+      // background-color: blueviolet;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .reseaux a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 3px gray solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      width: 20%;
+      height: 50px;
+      border: 3px white solid;
+      background-color: transparent;
+      color: white;
+    }
   }
-  
 
-
-  }  
-
-  main{
+  main {
     width: 100%;
     height: 300vh;
     background-color: red;
     overflow: hidden;
 
+    .bannier {
+      background-image: url("../public/banner-bg.png");
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 800px;
+      color: #fff;
+    }
 
+    .welcom {
+      transform: translateY(270px);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background: blue;
+      width: 100%;
+      height: 60%;
+    }
 
-   .bannier{
-    background-image:url('../public/banner-bg.png') ;
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 800px;
-    color: #fff;
-    
-   } 
- 
-   .welcom{
-    transform: translateY(270px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background:blue;
-    width: 100%;
-    height: 50%;
+    .presentation {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: rgb(255, 0, 170);
+    }
+    .portfolio {
+      width: 50%;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding: 8px 10px;
+      background: linear-gradient(
+        90.21deg,
+        rgba(170, 54, 124, 0.5) -5.91%,
+        rgba(74, 47, 189, 0.5) 111.58%
+      );
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      font-size: 20px;
+      font-family: centra, serif;
+    }
+    .name{
+      position: relative;
+      word-wrap: break-word;
+      width: 100%;
+      // background: #000;
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      line-height: 1;
+    }
+    .data-change{
+      height: 100%;
+      width: max-content;
+      background: #000;
+      position: relative;
+    }
+    .data-change::after{
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 3px;
+      background-color: #dadada;
+      // backgro und-color: red;
+      right:-6px;
+      top: 0px;
+      animation: cursor 1s infinite;
+    }
 
-   }
-  
-   .presentation{
-    width: 40%;
-    height: 100%;
-   }
-    img{
-    width: 50%;
-    height: 100%;
-    animation: svgAnimete 3s linear infinite;
-   }
-   @keyframes svgAnimete {
-  0%{
-    transform: translateY(-20px);
+    @keyframes cursor {
+      0%{
+opacity: 1;
+      }
+
+      50%{
+        opacity: 0;
+              
+      }
+      100%{
+        opacity: 1;
+              
+      }
+      
+    }
+    img {
+      width: 40%;
+      height: 100%;
+      animation: svgAnimete 3s linear infinite;
+    }
+
+    @keyframes svgAnimete {
+      0% {
+        transform: translateY(-20px);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
   }
-  50%{
-    transform: translateY(20px);
-  }
-  100%{
-    transform: translateY(-20px);
-  }
-
-    
-   }
-  }
-
-
-
-
 }
