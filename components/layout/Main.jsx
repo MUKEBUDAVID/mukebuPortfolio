@@ -1,53 +1,78 @@
 
 import React, { useEffect, useState } from "react";
+import Skills from "../atom/Skills";
+import Baniere from "../atom/Baniere";
 
 function Main() {
-const [words,setwords]=useState("");
+// const [mots,setmots]=useState("");
 
-const text1=" web Developper";
-const text2=" Mobile Developper";
-const text3=" Desktop Developper";
-let intervalId ="";
+// const text=["web Developper","Mobile Developper","Desktop Developper"];
+// let intervalId ="";
+// let oneInterval=""
 
-const typewritter=(word,index)=>{
-  if(index < word.length ){
-    intervalId =setTimeout(()=>{
-  setwords((words)=> words+word[index])
-  typewritter(word,index+1)
-     },300)
 
-  }
+// const promesse=new Promise((resolve,reject)=>{
 
-  if(index >= word.length ){
+//  setTimeout(()=>{
+//   resolve("uppy")
+//  },8000)
 
-    
-      setTimeout(()=>{
-        setwords((words)=> words.substring(0, words.length - 1))
-        typewritter(word,index+1)
-           },300)
 
-   
-    
+
+// })
+
+
+
+// const typewritter=(word,index)=>{
+//   if(index < word[0].length ){
+//     intervalId =setTimeout(()=>{
+//   setmots((mots)=> mots+word[0][index])
+//   typewritter(word,index+1)
+//      },300)
+
+//   }
+
+//   if(index >= word[0].length && index<32 ){
+//     promesse.then(()=>{  
+//     oneInterval=setTimeout(()=>{
+//         setmots((mots)=> mots.substring(0, mots.length - 1))
+//         typewritter(word,index+1)
+//        console.log(index);     
+//       },300)
+          
+//           })
+//          }
+
+//  if(index >= 31){
+//   setTimeout(()=>{
+//     // setwords((words)=> words.substring(0, words.length - 1))
+//     typewritter(word,index+1)
+//     console.log("oui");
+        
+//   },300)
   
-     
- }
+ 
+
+//  }   
+
   
   
 
 
- }
+//  }
 
-useEffect(() => {
+// useEffect(() => {
 
- typewritter(text1,0)
+//  typewritter(text,0)
 
 
-  return () => {
-     clearTimeout(intervalId);
-  setwords("")
+//   return () => {
+//     clearTimeout(intervalId);
 
-  };
-},[]);
+//   setmots("")
+
+//   };
+// },[]);
 
 
 
@@ -58,37 +83,8 @@ useEffect(() => {
   return (
     <main>
 
-      <section className="bannier">
-
-        <div className="welcom">
-
-          <div className="presentation">
-
-            <div className="portfolio">Welcome to my Portfolio</div>
-
-            <h1 aria-label="Hi! I'm David Mukebu" className="name">Hi! I'm David Mukebu 
-             <span className="data-change">{words}</span>
-              </h1>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              reiciendis ad quae harum deserunt iusto necessitatibus autem minus
-              adipisci quo. Molestias error nostrum obcaecati alias distinctio
-              itaque reprehenderit soluta a!
-            </p>
-
-
-            <div>
-              <p>Let's Connect</p>
-       <img src="/arrow.svg" alt="fleche" />
-      
-            </div>
-
-          </div>
-
-          <img src="/header-img.svg" alt="svg" />
-        </div>
-      </section>
+     <Baniere/>
+      <Skills/>
 
     </main>
   );

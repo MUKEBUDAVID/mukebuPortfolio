@@ -20,7 +20,7 @@
   header {
     width: 100%;
     height: 80px;
-    border: 1px red solid;
+    // border: 1px red solid;
     // padding: 18px 0 ;
     display: flex;
     flex-direction: row;
@@ -28,6 +28,7 @@
     justify-content: space-between;
     background-color: transparent;
     position: fixed;
+    z-index: 200;
 
     .logo {
       margin-left: 40px;
@@ -102,106 +103,161 @@
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      height: 800px;
+      height: 1000px;
       color: #fff;
-    }
 
-    .welcom {
-      transform: translateY(270px);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      background: blue;
-      width: 100%;
-      height: 60%;
-    }
 
-    .presentation {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      background-color: rgb(255, 0, 170);
-    }
-    .portfolio {
-      width: 50%;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      padding: 8px 10px;
-      background: linear-gradient(
-        90.21deg,
-        rgba(170, 54, 124, 0.5) -5.91%,
-        rgba(74, 47, 189, 0.5) 111.58%
-      );
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      font-size: 20px;
-      font-family: centra, serif;
-    }
-    .name{
-      position: relative;
-      word-wrap: break-word;
-      width: 100%;
-      // background: #000;
-      font-size: 35px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      line-height: 1;
-    }
-    .data-change{
-      height: 100%;
-      width: max-content;
-      background: #000;
-      position: relative;
-    }
-    .data-change::after{
-      content: "";
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 3px;
-      background-color: #dadada;
-      // backgro und-color: red;
-      right:-6px;
-      top: 0px;
-      animation: cursor 1s infinite;
-    }
 
-    @keyframes cursor {
-      0%{
-opacity: 1;
+      .welcom {
+        transform: translateY(250px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        // background: blue;
+        width: 100%;
+        height: 60%;
       }
-
-      50%{
-        opacity: 0;
-              
+  
+      .presentation {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        // background-color: rgb(255, 0, 170);
+        margin-left: 50px;
       }
-      100%{
-        opacity: 1;
-              
+      .portfolio {
+        width: 280px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        padding: 8px 10px;
+        background: linear-gradient(
+          90.21deg,
+          rgba(170, 54, 124, 0.5) -5.91%,
+          rgba(74, 47, 189, 0.5) 111.58%
+        );
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+        font-family: centra, serif;
       }
-      
-    }
-    img {
-      width: 40%;
-      height: 100%;
-      animation: svgAnimete 3s linear infinite;
-    }
-
-    @keyframes svgAnimete {
-      0% {
+      .name{
+        position: relative;
+        word-wrap: break-word;
+        width: 100%;
+        // background: #000;
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        line-height: 1;
+        margin-top: -50px;
+      }
+      .data-change{
+        height: 100%;
+        width: max-content;
+        // background: #000;
+        position: relative;
+      }
+      .data-change::after{
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 3px;
+        background-color: #dadada;
+        // backgro und-color: red;
+        right:-6px;
+        top: 0px;
+        animation: cursor 1s infinite;
+      }
+      .paragraph{
+       font-size: 18px;
+       line-height: 27px;
+       color: #b8b8b8;
+       font-family: centra, sans-serif; 
+      margin-top: -60px;
+      }
+      .Connect{
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+        
+        letter-spacing: 0.8px;
+        display: flex;
+        width: 180px;
+        justify-content: space-around;
+        background-color: transparent;
+        transform: translateX(0px);
         transform: translateY(-20px);
+        transition: transfrom 1000ms ; 
+        cursor: pointer;  
       }
-      50% {
-        transform: translateY(20px);
+      .Connect p{
+        font-family: centra, sans-serif;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        
       }
-      100% {
-        transform: translateY(-20px);
+      .Connect img{
+        font-size: 25px;
+        margin-left: 10px;
+        transition: 0.3s ease-in-out;
+        line-height: 1;
+  
       }
+      .Connect:hover img{
+      transform: translateX(30px);
+      }
+      @keyframes cursor {
+        0%{
+  opacity: 1;
+        }
+  
+        50%{
+          opacity: 0;
+                
+        }
+        100%{
+          opacity: 1;
+                
+        }
+        
+      }
+      .header-img {
+        width: 40%;
+        height: 70%;
+        animation: svgAnimete 3s linear infinite;
+      }
+  
+      @keyframes svgAnimete {
+        0% {
+          transform: translateY(-20px);
+        }
+        50% {
+          transform: translateY(20px);
+        }
+        100% {
+          transform: translateY(-20px);
+        }
+      }
+
+
+
+
+
+
+
+
+
     }
+
+
+ 
   }
 }
