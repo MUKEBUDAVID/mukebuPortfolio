@@ -100,16 +100,20 @@
     .bannier {
       background-image: url("../public/banner-bg.png");
       background-position: top center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      // background-size:cover ;
+      background-repeat: repeat;
       width: 100%;
-      height: 1000px;
+      height: 900px;
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 260px 0 100px 0;
 
 
 
       .welcom {
-        transform: translateY(250px);
+        // transform: translateY(200px);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -154,7 +158,7 @@
         font-weight: 700;
         letter-spacing: 0.8px;
         line-height: 1;
-        margin-top: -50px;
+        margin-top: -40px;
       }
       .data-change{
         height: 100%;
@@ -179,7 +183,7 @@
        line-height: 27px;
        color: #b8b8b8;
        font-family: centra, sans-serif; 
-      margin-top: -60px;
+      margin-top: -30px;
       }
       .Connect{
         color: #fff;
@@ -216,7 +220,7 @@
       }
       @keyframes cursor {
         0%{
-  opacity: 1;
+          opacity: 1;
         }
   
         50%{
@@ -256,6 +260,77 @@
 
 
     }
+
+
+
+    .skill{
+      width: 70%;
+      height: 700px;
+      background: #151515;
+      border-radius: 64px;
+      text-align: center;
+      padding: 70px 60px;
+      margin-top: -50px;
+      transform:translateY(60px);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-around;
+
+
+
+img{
+  width:50%;
+
+}
+h5{
+  margin-top:10px
+}}
+
+
+.projets{
+  width:100%;
+  height:700px;
+  background-color:black;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  #center{
+    width: 80vw;
+    height:600px;
+    background-color:rgba(0, 0, 255, 0.995) !important; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
+  }
+
+   h3{
+    font-family: centra, serif;
+     line-height: 54px;
+     font-size: 45px;
+     font-weight: 700;
+     color:#ffffff;
+
+  }
+  .exemple_projet{
+    width: 56%;
+    margin-top: 25px;
+    font-family: centra, serif;
+    color: #b8b8b8;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: 0.8px;
+    text-align: center;
+  }
+
+
+
+}
+
+
 
 
  
