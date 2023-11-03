@@ -2,6 +2,10 @@
 
 @import "./variable";
 @import "./App";
+@import "./Bannier";
+
+@import "./Projets";
+
 @media screen and  (min-width:map-get($breakpoint, Desktop)) {
   body {
     width: 100vw;

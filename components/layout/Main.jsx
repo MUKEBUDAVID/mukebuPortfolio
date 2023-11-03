@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Baniere from "../molecule/Baniere";
 import  Projets from "../molecule/Projets";
+import Contact from "../atom/Contact";
 
 function Main() {
   // const [mots,setmots]=useState("");
@@ -65,6 +66,8 @@ function Main() {
     <main>
       <Baniere />
       <Projets/>
+      <Contact/>
+
     </main>
   );
 }

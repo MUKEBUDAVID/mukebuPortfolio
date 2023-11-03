@@ -20,7 +20,6 @@ function Projets() {
       <BarProjets />
     </div>
       }
-      
       </TrackVisibility>
     </section>
   );
