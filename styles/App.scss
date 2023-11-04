@@ -93,12 +93,153 @@
 
   main {
     width: 100%;
-    height: 450vh;
-    background-color: red;
+    height: 470vh;
+    // background-color: red;
     overflow: hidden;
 
-   
-
-  
   }
+
+  footer{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+  }
+
+  .Subscribe{
+    position: absolute;
+    width: 90%;
+    height: 320px;
+    background-color: white;
+    border-radius: 55px;
+    top: -20%;
+    left: 6%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+   
+  }
+
+  .Subscribe h3{
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 34px;
+    font-size: 28px;
+    font-family: centra,sans-serif;
+    color: #121212;
+    width: 20%;
+    }
+
+    .Subscribe form{
+      width: 45%;
+      height: 80px;
+      display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 1px solid   #4A2FBD;
+
+    }
+    .Subscribe input{
+      width: 55%;
+      height: 45px;
+      color: #121212;
+      font-weight: 500;
+      background: transparent;
+      border: 0;
+      padding: 0 15px;
+     
+     
+    }
+
+    .Subscribe input::placeholder{
+      font-size: 20px;
+      font-weight: 400;
+      color:#12121262;
+    font-family: centra,sans-serif;
+    font-weight: 500;
+
+    }
+
+    .Subscribe input:focus{
+     font-size: 18px;
+     font-family: centra,sans-serif;
+     outline: none;
+     font-weight: 400;
+
+
+    }
+
+    .Subscribe button{
+      background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    padding: 20px 65px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 18px;
+    font-size: 16px;
+    font-family: centra,sans-serif;
+    line-height: 24px;
+    }
+
+    .Copyright{
+      width: 100%;
+      height: 200px;
+      margin-bottom: -16%;
+      // background-color: rgb(0, 98, 255);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .Copyright .logo{
+     
+      margin-left: 40px;
+      font-family: centra, serif;
+      font-size: 20px;
+      color: white;
+
+
+    }
+    .divres{
+      height: 100px;
+      // background: #dad2d2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 50px;
+
+    }
+
+     .reseaux2 {
+      width: 200px;
+      height: 100%;
+      // background-color: blueviolet;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+     .reseaux2 a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 3px gray solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Reserved{
+    font-weight: 400;
+    font-size: 14px;
+    color: #B8B8B8;
+    letter-spacing: 0.5px;
+    }
 }

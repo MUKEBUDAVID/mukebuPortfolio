@@ -1,13 +1,13 @@
 import React from "react";
-import BarProjets from "../atom/BarProjets";
 import TrackVisibility from "react-on-screen";
 import 'animate.css';
+import BarProjets from  "../atom/BarProjets"
 
 
 function Projets() {
   return (
     <section className="projets">
-      <TrackVisibility>
+       <TrackVisibility>
       {({ isVisible }) => 
       <div  className={isVisible ? "animate__animated animate__fadeIn": ""} id="center">
       <h3>Projects</h3>

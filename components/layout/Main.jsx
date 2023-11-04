@@ -67,7 +67,6 @@ function Main() {
       <Baniere />
       <Projets/>
       <Contact/>
-
     </main>
   );
 }
