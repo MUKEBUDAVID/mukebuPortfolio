@@ -6,12 +6,16 @@
 @import "./Projets";
 @import "./Contact";
 
+
+
+
 @media screen and  (min-width:map-get($breakpoint, Desktop)) {
+
+
   body {
     width: 100vw;
-    height:550vh;
-    line-height: 1;
-    background: #000;
+    height:3550px;
+    background: #080808;
 
     /* overflow-x: hidden; */
   }

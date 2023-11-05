@@ -4,21 +4,14 @@ import 'animate.css';
 
 
 function Contact() {
-
-
+  
     const handleSubmit = async (e) => {
         e.preventDefault();
-       
       };
 
 
-
-
-
-
-
   return (
-    <section className="contact">
+    <section className="contact" id="connect">
       <TrackVisibility>
         {({ isVisible }) => (
           <img

@@ -6,7 +6,7 @@ import BarProjets from  "../atom/BarProjets"
 
 function Projets() {
   return (
-    <section className="projets">
+    <section className="projets" id="projects">
        <TrackVisibility>
       {({ isVisible }) => 
       <div  className={isVisible ? "animate__animated animate__fadeIn": ""} id="center">

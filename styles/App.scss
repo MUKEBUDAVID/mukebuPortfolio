@@ -16,6 +16,11 @@
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
 @media screen and (min-width: map-get($breakpoint, Desktop)) {
   header {
     width: 100%;
@@ -29,6 +34,10 @@
     background-color: transparent;
     position: fixed;
     z-index: 200;
+    // background-color: #121212;
+
+
+  
 
     .logo {
       margin-left: 40px;
@@ -59,10 +68,14 @@
     nav a {
       font-family: centra, serif;
       text-decoration: none;
-      color: #fff;
+      color:rgb(109,109,109);
       font-weight: 400;
       letter-spacing: 0.8px;
       font-size: 18px;
+      cursor: pointer;
+    }
+    nav a:hover {
+      color: #fff;
     }
     .reseaux {
       width: 200px;
@@ -82,18 +95,98 @@
       justify-content: center;
       align-items: center;
     }
-    button {
+
+    .reseaux a::before {
+      content: "";
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transform: scale(0);
+    transition: 0.3s ease-in-out;
+     
+    }
+
+    .reseaux a:hover::before {
+      transform: scale(1);
+  }
+
+  .reseaux a:hover img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  }
+
+    .lestCon {
       width: 20%;
       height: 50px;
       border: 3px white solid;
       background-color: transparent;
       color: white;
+      position: relative;
+      cursor: pointer;
+
     }
+    .lestCon::before {
+      content: "";
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      background-color: #fff;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      transition: 0.3s ease-in-out;
+
+    }
+    .lestCon a{
+      text-decoration: none;
+      color: white;
+    }
+    
+    .lestCon:hover a{
+      color: #121212;
+    }
+    .lestCon:hover::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    
+
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .scrolled {
+    // padding: 0px 0;
+    background-color: #060606;
+  }
+  .active{
+    color: white;
+  }
   main {
     width: 100%;
-    height: 470vh;
+    height: 3100px;
     // background-color: red;
     overflow: hidden;
 
@@ -101,7 +194,7 @@
 
   footer{
     width: 100%;
-    height: 350px;
+    height: 450px;
     background-color: black;
     position: relative;
     display: flex;
@@ -116,7 +209,7 @@
     height: 320px;
     background-color: white;
     border-radius: 55px;
-    top: -20%;
+    top: -30%;
     left: 6%;
     display: flex;
     flex-direction:row;
@@ -191,7 +284,7 @@
     .Copyright{
       width: 100%;
       height: 200px;
-      margin-bottom: -16%;
+      // margin-bottom: -16%;
       // background-color: rgb(0, 98, 255);
       display: flex;
       flex-direction: row;
@@ -236,6 +329,25 @@
       justify-content: center;
       align-items: center;
     }
+    .reseaux2 a::before {
+      content: "";
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transform: scale(0);
+    transition: 0.3s ease-in-out;
+     
+    }
+
+    .reseaux2 a:hover::before {
+      transform: scale(1);
+  }
+
+  .reseaux2 a:hover img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  }
     .Reserved{
     font-weight: 400;
     font-size: 14px;

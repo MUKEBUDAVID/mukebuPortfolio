@@ -27,7 +27,7 @@ function Skills() {
   };
 
   return (
-    <section className="skill">
+    <section className="skill" id="skills">
       <h2>Skills</h2>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
