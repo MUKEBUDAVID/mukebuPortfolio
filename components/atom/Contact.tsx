@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import TrackVisibility from "react-on-screen";
 import 'animate.css';
 
 
 function Contact() {
   
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e:FormEvent) => {
         e.preventDefault();
       };
 
@@ -37,13 +37,7 @@ function Contact() {
           </div>
 
           
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Message"
-              className="message"
+            <textarea name="" id="" cols={30} rows={10} placeholder="Message" className="message"
             ></textarea>
 
             <button type="submit" className="submitBtn">

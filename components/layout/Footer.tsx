@@ -1,7 +1,7 @@
-import React from "react";
+import React,{FormEvent} from "react";
 
 function Footer() {
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:FormEvent) => {
     e.preventDefault();
   };
 

@@ -38,7 +38,7 @@ function Skills() {
         responsive={responsive}
         infinite={true}
         className="owl-carousel owl-theme skill-slider"
-        id="carousel"
+        
       >
         <div className="item">
           <img src="/meter1.svg" alt="Image" />
