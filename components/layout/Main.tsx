@@ -3,6 +3,9 @@ import Baniere from "../molecule/Baniere";
 import  Projets from "../molecule/Projets";
 import Contact from "../atom/Contact";
 
+
+
+
 function Main() {
   
   return (
