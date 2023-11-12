@@ -144,3 +144,331 @@
 
 
   }
+
+
+
+
+
+
+
+  // pour le tablete
+
+@media screen and (min-width: map-get($breakpoint, Tablet)) and  (max-width: 1024px)  {
+   .contact{
+        width: 100vw;
+        height: 900px;
+        background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+        display: flex;
+        flex-direction: row;   
+        justify-content: space-around;
+        align-items:center;
+       
+    
+    
+        img{
+            width: 40vw;
+            height:50vh;
+            // border: 3px solid black;
+            margin-top: -50%;
+        }
+    .divform{
+           width:60vw ;
+            height: 600px;
+            // background: yellowgreen; 
+            display: flex;
+            flex-direction: column;
+            align-items: safe;
+            justify-content:flex-start;
+            margin-top: -50%;
+    }
+        .formContact{
+           width: 95%;
+           height: 95%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+    
+    }
+    
+    .formContact label{
+        font-family: centra,sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 54px;
+        color: white;
+    }
+    .name , .email{
+        width: 100%;
+        height: 70px;
+        // background: #000;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        
+        
+    }
+    
+    
+    .name  input, .email input{
+        width: 47%;
+        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        padding-left: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        transition: 0.3s ease-in-out;
+        
+    }
+    .formContact  input:focus, textarea:focus {
+        background: rgba(255, 255, 255, 1);
+        color: #121212;
+        outline: none;
+    }
+    .formContact input::placeholder, .formContact  textarea::placeholder {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+      }
+    
+      .formContact input:focus::placeholder, .formContact textarea:focus::placeholder {
+        color: #121212;
+        opacity: 0.8;
+      }
+    
+    
+    .message{
+        width: 96%;
+        // height: 200px;
+        background: #000;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        color: #fff;
+        margin: 0 0 8px 0;
+        padding: 12px 10px;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        transition: 0.3s ease-in-out;
+    }
+    .submitBtn{
+        width: 140px;
+        font-weight: 700;
+        color: #000;
+        background-color: #fff;
+        padding: 14px 48px;
+        font-size: 18px;
+        margin-top: 25px;
+        border-radius: 0;
+        position: relative;
+        border: 0px transparent solid;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .submitBtn::before{
+        content: "";
+        background: #121212;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        
+    }
+    .submitBtn span{
+        z-index: 1;
+        position: relative;
+        font-size: 18px;
+        font-family: centra,sans-serif;
+        font-weight: 700;
+    }
+    .submitBtn:hover{
+        color: white;
+    }
+    .submitBtn:hover::before {
+        width: 100%;
+      }
+    
+      }
+    
+    
+
+
+    
+  }
+
+
+
+
+
+
+// pour le smarphone
+@media screen and  (max-width:map-get($breakpoint, Mobile)) {
+
+ .contact{
+        width: 100vw;
+        height: 1400px;
+        background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+        display: flex;
+        flex-direction: column;   
+        justify-content: space-around;
+        align-items:center;
+       
+    
+    
+        img{
+            width: 80vw;
+            height:300px;
+            // border: 3px solid black;
+            margin-top: -50%;
+        }
+    .divform{
+           width:100vw ;
+            height: 800px;
+            // background: yellowgreen; 
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:space-around;
+            margin-top: -80%;
+    }
+        .formContact{
+           width: 95%;
+           height: 95%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: center;
+    
+    }
+    
+    .formContact label{
+        font-family: centra,sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 54px;
+        color: white;
+        margin-bottom: 10px;
+        // margin-left: 15px;
+    }
+    .name , .email{
+        width: 100vw;
+        height: 200px;
+        // background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        
+        
+    }
+    
+    
+    .name  input, .email input{
+        width: 90vw;
+        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        padding-left: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        transition: 0.3s ease-in-out;
+        
+    }
+
+    .email {
+      margin-top: 10px;
+        
+    }
+    .formContact  input:focus, textarea:focus {
+        background: rgba(255, 255, 255, 1);
+        color: #121212;
+        outline: none;
+    }
+    .formContact input::placeholder, .formContact  textarea::placeholder {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+      }
+    
+      .formContact input:focus::placeholder, .formContact textarea:focus::placeholder {
+        color: #121212;
+        opacity: 0.8;
+      }
+    
+    
+    .message{
+        width: 90vw;
+        height: 400px;
+        background: #000;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        color: #fff;
+        margin: 10px 0 8px 0;
+        padding: 12px 10px;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        transition: 0.3s ease-in-out;
+    }
+    .submitBtn{
+        width: 140px;
+        font-weight: 700;
+        color: #000;
+        background-color: #fff;
+        padding: 14px 48px;
+        font-size: 18px;
+        margin-top: 25px;
+        border-radius: 0;
+        position: relative;
+        border: 0px transparent solid;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .submitBtn::before{
+        content: "";
+        background: #121212;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        
+    }
+    .submitBtn span{
+        z-index: 1;
+        position: relative;
+        font-size: 18px;
+        font-family: centra,sans-serif;
+        font-weight: 700;
+    }
+    .submitBtn:hover{
+        color: white;
+    }
+    .submitBtn:hover::before {
+        width: 100%;
+      }
+    
+      }
+
+
+
+
+}
+
+  
